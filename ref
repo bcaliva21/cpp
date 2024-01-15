@@ -1,0 +1,19 @@
+char v[6] // variable v is an array of typeof char/sizeof 6
+
+char* p // variable p is a pointer to a typeof char
+
+char* p = &v[3] // variable p pointer to a typeof char is equal to address of v sub 3
+
+char x = *p; // var x typeof x is equal to contents of p
+
+for (auto x : v) // for each x in v
+
+for (auto& x : v) // for each x, reference to a typeof auto, in v
+
+double sum(const vector<double>&) // function sum returns a double and accepts one parameter a constant reference to a vector which holds typeof double
+
+T a[n]; // T[n]: array a of n T's
+T* p;   // T*: var p pointer to T
+T& r;   // T&: var r reference to T
+T f(a); // T(A): function taking an argument typeof A returning a result of type T
+
