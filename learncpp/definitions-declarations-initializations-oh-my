@@ -1,0 +1,9 @@
+Definition - implements a function or instantiates a variable:  void foo() {}; // function definition
+			 Definitions are also declarations				    int x; // variable definition
+
+Declaration - Tells compiler about an identifier and its associated type information: void foo(); // function declaration
+																					  int x;      // variable declaration
+
+Pure declaration - A declaraoin that isn't a defintion: void foo();
+
+Initialization - Provides an initial value for a defined object: int x{ 2 }; // 2 is the initializer
