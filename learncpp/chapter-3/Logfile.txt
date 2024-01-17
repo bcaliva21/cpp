@@ -1,0 +1,2 @@
+﻿2024-01-15 20:51:31.864 DEBUG [14800] [main@19] main() called
+2024-01-15 20:51:31.865 DEBUG [14800] [get_user_input@7] get_user_input() called
