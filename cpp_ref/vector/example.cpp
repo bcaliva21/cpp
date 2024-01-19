@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -13,8 +14,7 @@ int main()
 
 	v[2] = -1;
 
-	for (int n : v)
-		std::cout << n << '\n';
+	std::for_each(v.begin(), v.end(), [](const int n) { std::cout << n << ' '; });
 	std::cout << '\n';
 	std::cout << "expect: [420,8,-1,5,9,6,9] \n";
 
@@ -25,4 +25,11 @@ int main()
 	}
 
 	std::cout << "capacity after: " << v.capacity() << '\n';
+
+	for (int i = 0; i < 20; ++i)
+		v.pop_back();
+
+	std::for_each(v.rbegin(), v.rend(), [](const int n) { std::cout << n << ' '; });
+	std::cout << '\n';
+
 }
